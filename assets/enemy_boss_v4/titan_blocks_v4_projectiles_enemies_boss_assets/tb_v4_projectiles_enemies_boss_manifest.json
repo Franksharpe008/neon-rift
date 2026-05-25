@@ -1,0 +1,30 @@
+{
+  "version": "v4_true_overhead_projectiles_enemies_boss",
+  "camera": "100% directly overhead",
+  "purpose": "Projectile frames, enemy modular wraps, boss modular wraps, all matching the V4 player top-down wrap style.",
+  "projectiles": {
+    "blaster": "tb_v4_proj_blaster_frame_00-03",
+    "homing": "tb_v4_proj_homing_frame_00-05",
+    "missile": "tb_v4_proj_missile_frame_00-03",
+    "laser": "tb_v4_proj_laser_frame_00-05",
+    "bomb": "tb_v4_proj_bomb_frame_00-03",
+    "napalm": "tb_v4_proj_napalm_frame_00-05",
+    "pierce": "tb_v4_proj_pierce_frame_00-03",
+    "enemy": "tb_v4_proj_enemy_frame_00-03",
+    "boss": "tb_v4_proj_boss_frame_00-05"
+  },
+  "effects": {
+    "bomb_explosion": "tb_v4_fx_bomb_explosion_frame_00-07",
+    "nova_screen_burst": "tb_v4_fx_nova_screen_burst_frame_00-07",
+    "napalm_pool": "tb_v4_fx_napalm_pool_frame_00-05"
+  },
+  "enemy_types": [
+    "chaser",
+    "charger",
+    "splitter",
+    "sniper",
+    "hunter"
+  ],
+  "boss": "Goliath / Rift Guardian modular top-down boss",
+  "important": "Use assembled previews only as references. Actual game should use modular parts or projectile frame sequences."
+}

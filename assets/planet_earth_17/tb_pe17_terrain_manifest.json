@@ -1,0 +1,21 @@
+{
+  "name": "Planet Earth 17 Terrain Kit",
+  "total_png_assets": 367,
+  "style": "top-down game-like alien gravel planet",
+  "draw_order": [
+    "tiles",
+    "decals_dirt",
+    "decals_gravel",
+    "cracks",
+    "dust_shadows",
+    "edge_border_rocks",
+    "rocks_small",
+    "rocks_medium",
+    "rocks_large",
+    "glow_vents_animated",
+    "crystals_animated",
+    "subtle_spawn_marks",
+    "actors"
+  ],
+  "codex_rule": "Keep center readable. Heavy props on outer third. Do not bake enemies/player/HUD into background."
+}

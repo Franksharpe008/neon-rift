@@ -1,0 +1,181 @@
+{
+  "coordinate_system": "top-down, character faces up by default, rotate assembled rig toward aim angle",
+  "recommended_canvas_scale": "0.38 to 0.55 depending on current player size",
+  "parts": {
+    "head": {
+      "file": "tb_player_head_helmet_topdown.png",
+      "anchor": "center bottom",
+      "pivot": [
+        80,
+        118
+      ],
+      "attach_to_torso": [
+        128,
+        58
+      ]
+    },
+    "torso": {
+      "file": "tb_player_torso_core_topdown.png",
+      "anchor": "center",
+      "pivot": [
+        128,
+        128
+      ]
+    },
+    "left_upper_arm": {
+      "file": "tb_player_left_upper_arm_topdown.png",
+      "pivot": [
+        99,
+        82
+      ],
+      "attach_to_torso": [
+        84,
+        95
+      ],
+      "swing": "walk + recoil"
+    },
+    "right_upper_arm": {
+      "file": "tb_player_right_upper_arm_topdown.png",
+      "pivot": [
+        61,
+        82
+      ],
+      "attach_to_torso": [
+        172,
+        95
+      ],
+      "swing": "walk + recoil"
+    },
+    "left_forearm": {
+      "file": "tb_player_left_forearm_topdown.png",
+      "pivot": [
+        95,
+        82
+      ],
+      "attach_to_upper_arm": [
+        50,
+        110
+      ],
+      "swing": "aim/recoil"
+    },
+    "right_forearm": {
+      "file": "tb_player_right_forearm_topdown.png",
+      "pivot": [
+        65,
+        82
+      ],
+      "attach_to_upper_arm": [
+        110,
+        110
+      ],
+      "swing": "aim/recoil"
+    },
+    "left_hand": {
+      "file": "tb_player_left_hand_topdown.png",
+      "pivot": [
+        82,
+        70
+      ],
+      "attach_to_forearm": [
+        45,
+        96
+      ]
+    },
+    "right_hand": {
+      "file": "tb_player_right_hand_topdown.png",
+      "pivot": [
+        46,
+        70
+      ],
+      "attach_to_forearm": [
+        115,
+        96
+      ]
+    },
+    "left_thigh": {
+      "file": "tb_player_left_thigh_topdown.png",
+      "pivot": [
+        86,
+        62
+      ],
+      "attach_to_torso": [
+        108,
+        168
+      ],
+      "swing": "walk cycle"
+    },
+    "right_thigh": {
+      "file": "tb_player_right_thigh_topdown.png",
+      "pivot": [
+        74,
+        62
+      ],
+      "attach_to_torso": [
+        148,
+        168
+      ],
+      "swing": "walk cycle"
+    },
+    "left_shin": {
+      "file": "tb_player_left_shin_topdown.png",
+      "pivot": [
+        82,
+        66
+      ],
+      "attach_to_thigh": [
+        72,
+        118
+      ],
+      "swing": "walk cycle"
+    },
+    "right_shin": {
+      "file": "tb_player_right_shin_topdown.png",
+      "pivot": [
+        78,
+        66
+      ],
+      "attach_to_thigh": [
+        88,
+        118
+      ],
+      "swing": "walk cycle"
+    },
+    "left_foot": {
+      "file": "tb_player_left_foot_topdown.png",
+      "pivot": [
+        76,
+        72
+      ],
+      "attach_to_shin": [
+        70,
+        120
+      ]
+    },
+    "right_foot": {
+      "file": "tb_player_right_foot_topdown.png",
+      "pivot": [
+        64,
+        72
+      ],
+      "attach_to_shin": [
+        90,
+        120
+      ]
+    }
+  },
+  "weapon_files": {
+    "BLASTER": "tb_weapon_blaster_topdown.png",
+    "LASER": "tb_weapon_laser_cannon_topdown.png",
+    "MISSILE": "tb_weapon_missile_launcher_topdown.png",
+    "BOMB": "tb_weapon_bomb_cannon_topdown.png",
+    "NAPALM": "tb_weapon_bomb_cannon_topdown.png"
+  },
+  "animation_notes": {
+    "idle": "subtle torso bob 1-2px, arm breathing +/-2 degrees",
+    "walk": "alternate left/right legs +/-18 degrees based on movement speed, arms counter-swing +/-10 degrees",
+    "shoot": "right forearm recoil -8 degrees for 80ms; weapon flash near muzzle",
+    "dash": "stretch thruster flame frame 3, add cyan trail",
+    "damage": "use tb_fx_player_hit_spark_red.png for 120ms",
+    "shield": "use tb_fx_player_shield_flash_cyan.png as additive overlay"
+  }
+}

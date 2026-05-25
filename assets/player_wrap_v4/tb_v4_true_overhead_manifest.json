@@ -1,0 +1,74 @@
+{
+  "version": "v4_true_overhead_wrap",
+  "camera": "100% directly overhead, as if looking straight down from the sky/space",
+  "purpose": "Armor caps/wraps for the original block skeleton. Do not replace game mechanics.",
+  "core_instruction": "Draw each PNG over the matching original square/rectangle using the existing x, y, rotation, and animation state.",
+  "do_not": [
+    "Do not use isometric or angled interpretation",
+    "Do not replace the original block skeleton",
+    "Do not change hitboxes",
+    "Do not draw the entire character as one pasted sprite unless testing preview only",
+    "Do not stop the original leg/arm/gun motion"
+  ],
+  "draw_order": [
+    "thruster frame behind torso",
+    "leg wraps over leg blocks",
+    "shin/foot wraps if the old rig exposes those pieces",
+    "arm wraps over arm blocks",
+    "forearm/hand wraps if the old rig exposes those pieces",
+    "torso wrap",
+    "head wrap",
+    "gun body and optional gun parts",
+    "shield/hit effects"
+  ],
+  "assets": {
+    "torso": "tb_v4_wrap_torso_true_overhead.png",
+    "head": "tb_v4_wrap_head_true_overhead.png",
+    "arms": [
+      "tb_v4_wrap_left_arm_true_overhead.png",
+      "tb_v4_wrap_right_arm_true_overhead.png"
+    ],
+    "forearms": [
+      "tb_v4_wrap_left_forearm_true_overhead.png",
+      "tb_v4_wrap_right_forearm_true_overhead.png"
+    ],
+    "hands": [
+      "tb_v4_wrap_left_hand_true_overhead.png",
+      "tb_v4_wrap_right_hand_true_overhead.png"
+    ],
+    "legs": [
+      "tb_v4_wrap_left_leg_true_overhead.png",
+      "tb_v4_wrap_right_leg_true_overhead.png"
+    ],
+    "shins": [
+      "tb_v4_wrap_left_shin_true_overhead.png",
+      "tb_v4_wrap_right_shin_true_overhead.png"
+    ],
+    "feet": [
+      "tb_v4_wrap_left_foot_true_overhead.png",
+      "tb_v4_wrap_right_foot_true_overhead.png"
+    ],
+    "guns": {
+      "BLASTER": "tb_v4_wrap_gun_blaster_true_overhead.png",
+      "LASER": "tb_v4_wrap_gun_laser_true_overhead.png",
+      "MISSILE": "tb_v4_wrap_gun_missile_true_overhead.png",
+      "BOMB": "tb_v4_wrap_gun_bomb_true_overhead.png",
+      "NAPALM": "tb_v4_wrap_gun_bomb_true_overhead.png"
+    },
+    "gun_parts": [
+      "tb_v4_wrap_gun_part_muzzle_true_overhead.png",
+      "tb_v4_wrap_gun_part_stock_true_overhead.png",
+      "tb_v4_wrap_gun_part_bomb_core_true_overhead.png"
+    ],
+    "fx": [
+      "tb_v4_wrap_thruster_frame_00.png",
+      "tb_v4_wrap_thruster_frame_01.png",
+      "tb_v4_wrap_thruster_frame_02.png",
+      "tb_v4_wrap_thruster_frame_03.png",
+      "tb_v4_wrap_thruster_frame_04.png",
+      "tb_v4_wrap_shield_ring_true_overhead.png",
+      "tb_v4_wrap_hit_spark_true_overhead.png"
+    ]
+  },
+  "preview": "tb_v4_preview_true_overhead_wrap_on_original_blocks.png"
+}

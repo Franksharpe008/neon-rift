@@ -1,0 +1,16 @@
+{
+  "orbital_lockdown.mp3": {
+    "selected_beats": 64,
+    "loop_seconds": 27.428571,
+    "fade_beats": 4,
+    "fade_seconds": 1.714286,
+    "boundary_rms": 0.185736
+  },
+  "goliath_descent.mp3": {
+    "selected_beats": 64,
+    "loop_seconds": 27.428571,
+    "fade_beats": 4,
+    "fade_seconds": 1.714286,
+    "boundary_rms": 0.178807
+  }
+}

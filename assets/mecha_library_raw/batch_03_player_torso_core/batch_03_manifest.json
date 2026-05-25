@@ -1,0 +1,36 @@
+{
+  "batch": "03",
+  "name": "player_torso_core",
+  "purpose": "Player torso, chest, core, spine, reactor, hip connector, and damage variant assets.",
+  "camera": "100% top-down overhead, V4-compatible",
+  "asset_count": 10,
+  "missing_sources": [],
+  "files": [
+    "player_torso_main_overhead.png",
+    "player_torso_white_gold_plate_overhead.png",
+    "player_torso_black_underframe_overhead.png",
+    "player_chest_core_blue_overhead.png",
+    "player_core_glow_overlay_overhead.png",
+    "player_back_reactor_overhead.png",
+    "player_hip_connector_overhead.png",
+    "player_upper_spine_plate_overhead.png",
+    "player_lower_spine_plate_overhead.png",
+    "player_torso_damage_variant_overhead.png"
+  ],
+  "recommended_final_folder": "assets/player_wrap_v6/body_wraps/",
+  "do_not_change": [
+    "movement",
+    "hitboxes",
+    "arm motion",
+    "leg motion",
+    "gun rotation",
+    "recoil",
+    "dash",
+    "power-ups",
+    "scoring",
+    "music",
+    "HUD",
+    "enemy AI",
+    "boss logic"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "batch": "04",
+  "name": "player_head_shoulders",
+  "purpose": "Player head, helmet, visor, shoulders, neck connector, head light, and shoulder thruster assets.",
+  "camera": "100% top-down overhead, V4-compatible",
+  "asset_count": 10,
+  "missing_sources": [],
+  "files": [
+    "player_head_helmet_overhead.png",
+    "player_head_visor_glow_overhead.png",
+    "player_head_damage_variant_overhead.png",
+    "player_left_shoulder_white_gold_overhead.png",
+    "player_right_shoulder_white_gold_overhead.png",
+    "player_left_shoulder_dark_overhead.png",
+    "player_right_shoulder_dark_overhead.png",
+    "player_neck_connector_overhead.png",
+    "player_head_core_light_overhead.png",
+    "player_shoulder_thruster_pair_overhead.png"
+  ],
+  "recommended_final_folders": [
+    "assets/player_wrap_v6/head_wraps/",
+    "assets/player_wrap_v6/shoulder_wraps/",
+    "assets/player_wrap_v6/thruster_frames/"
+  ]
+}

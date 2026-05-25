@@ -1,0 +1,74 @@
+Titan Blocks Premium Mecha Assets, Batch 03
+Player torso, chest, core, spine, reactor, and damage wrap assets
+
+Purpose:
+This batch contains 10 individual top-down mecha assets for the main player body system. These are intended for the Player Mecha phase, specifically torso, chest, core, spine, reactor, hip connector, and damage variant visuals.
+
+Camera rule:
+Every asset in this batch is intended to be 100% top-down / direct overhead, matching the V4 pack camera logic. Do not treat these as side-view or isometric art.
+
+Background rule:
+These files use PNG-style checkerboard/transparent presentation from generation. In final game integration, Codex should treat checkerboard pixels as background/alpha cleanup if needed. Do not preserve checkerboard backgrounds in the final game render.
+
+Gameplay rule:
+Do not change gameplay mechanics. Preserve movement, hitboxes, arm motion, leg motion, gun rotation, recoil, dash, power-ups, scoring, music, HUD, enemy AI, and boss logic.
+
+Integration rule:
+Do not paste these as one full character sheet. These are individual assets. Sort each asset by function into the final player wrap folder.
+
+Player rule:
+The original V4 block/square player remains the animation skeleton. These torso/core pieces should wrap over the existing torso/body transforms and support the existing animations.
+
+Recommended final folder:
+assets/player_wrap_v6/body_wraps/
+
+Batch 03 files:
+1. player_torso_main_overhead.png
+   Main premium torso body shell. Use as primary torso visual wrap.
+
+2. player_torso_white_gold_plate_overhead.png
+   White/gold outer armor plate. Use as torso armor overlay or alternate chest shell.
+
+3. player_torso_black_underframe_overhead.png
+   Dark mechanical underframe. Use beneath outer armor or as damage/exposed-mech layer.
+
+4. player_chest_core_blue_overhead.png
+   Central blue chest reactor. Use as core layer over torso.
+
+5. player_core_glow_overlay_overhead.png
+   Reactor glow overlay. Draw additively or with screen blend if available.
+
+6. player_back_reactor_overhead.png
+   Rear/back reactor module. Use behind torso or as dash/thruster body component.
+
+7. player_hip_connector_overhead.png
+   Lower torso/hip connector. Use to connect body to leg animation rig.
+
+8. player_upper_spine_plate_overhead.png
+   Upper spine plate. Use as central structural overlay.
+
+9. player_lower_spine_plate_overhead.png
+   Lower spine plate. Use as lower structural overlay.
+
+10. player_torso_damage_variant_overhead.png
+    Damaged torso variant. Use for low health, hit flash, or death transition.
+
+Draw order suggestion:
+1. player_torso_black_underframe_overhead.png
+2. player_hip_connector_overhead.png
+3. player_upper_spine_plate_overhead.png
+4. player_lower_spine_plate_overhead.png
+5. player_torso_main_overhead.png
+6. player_torso_white_gold_plate_overhead.png
+7. player_chest_core_blue_overhead.png
+8. player_core_glow_overlay_overhead.png
+9. player_back_reactor_overhead.png only if rear reactor should appear behind/under torso
+10. player_torso_damage_variant_overhead.png only during damage/low-health/death states
+
+Testing rule:
+Add or keep debug toggles:
+O = player premium wrap on/off
+F = FX visuals on/off
+
+Success condition:
+The player should still move exactly like the original V4 block character, but the torso/core should now visually read as a premium top-down sci-fi mecha.

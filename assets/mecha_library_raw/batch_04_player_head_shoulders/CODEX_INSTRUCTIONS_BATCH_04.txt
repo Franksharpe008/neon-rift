@@ -1,0 +1,72 @@
+Titan Blocks Premium Mecha Assets, Batch 04
+Player head, helmet, visor, shoulders, neck connector, and shoulder thruster assets
+
+Purpose:
+This batch contains 10 individual top-down mecha assets for the main player identity layer. These files should be used for head, visor, shoulder plates, neck connector, core light, and shoulder thruster visuals.
+
+Camera rule:
+Every asset in this batch is intended to be 100% top-down / direct overhead, matching the V4 pack camera logic. Do not treat these as side-view or isometric art.
+
+Background rule:
+These files use PNG-style checkerboard/transparent presentation from generation. In final game integration, treat checkerboard pixels as alpha/background cleanup if needed. Do not preserve checkerboard backgrounds in the final game render.
+
+Gameplay rule:
+Do not change gameplay mechanics. Preserve movement, hitboxes, arm motion, leg motion, gun rotation, recoil, dash, power-ups, scoring, music, HUD, enemy AI, and boss logic.
+
+Integration rule:
+Do not paste these as one full character sheet. These are individual assets. Sort by function into the final player wrap folder.
+
+Recommended final folders:
+assets/player_wrap_v6/head_wraps/
+assets/player_wrap_v6/shoulder_wraps/
+assets/player_wrap_v6/thruster_frames/
+
+Batch 04 files:
+1. player_head_helmet_overhead.png
+   Primary top-down helmet/head visual.
+
+2. player_head_visor_glow_overhead.png
+   Blue visor or head-core glow overlay. Draw over the helmet with screen/additive blend if supported.
+
+3. player_head_damage_variant_overhead.png
+   Damaged helmet variant. Use for low-health, hit flash, or death transition.
+
+4. player_left_shoulder_white_gold_overhead.png
+   Left white/gold shoulder armor wrap.
+
+5. player_right_shoulder_white_gold_overhead.png
+   Right white/gold shoulder armor wrap.
+
+6. player_left_shoulder_dark_overhead.png
+   Left dark/exposed shoulder armor variant.
+
+7. player_right_shoulder_dark_overhead.png
+   Right dark/exposed shoulder armor variant.
+
+8. player_neck_connector_overhead.png
+   Connector between head and torso.
+
+9. player_head_core_light_overhead.png
+   Small glow/core detail for helmet or neck.
+
+10. player_shoulder_thruster_pair_overhead.png
+    Shoulder/back thruster module. Use behind shoulders or during dash.
+
+Draw order suggestion:
+1. player_shoulder_thruster_pair_overhead.png behind shoulders if active
+2. player_left_shoulder_dark_overhead.png / player_right_shoulder_dark_overhead.png as under-armor
+3. player_left_shoulder_white_gold_overhead.png / player_right_shoulder_white_gold_overhead.png as main shoulder plates
+4. player_neck_connector_overhead.png
+5. player_head_helmet_overhead.png
+6. player_head_visor_glow_overhead.png
+7. player_head_core_light_overhead.png
+8. player_head_damage_variant_overhead.png only during damage/low-health/death states
+
+Testing rule:
+Add or keep debug toggles:
+O = player premium wrap on/off
+H = head/shoulder layer on/off
+F = FX visuals on/off
+
+Success condition:
+The player should still move exactly like the original V4 block character, but the head/shoulder region should now visually read as a premium top-down sci-fi mecha.
